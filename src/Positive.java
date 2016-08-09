@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
  * Created by Rena on 27.07.2016.
  */
 public class Positive {
+    String driver_path="./lib/chromedriver.exe";
 
     @Test
 
     public void LogIn() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();
@@ -26,7 +27,7 @@ public class Positive {
 
     @Test
     public void LogOut() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();
@@ -44,7 +45,7 @@ public class Positive {
     @Test
 
     public void OpenMakeupWindow() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();
@@ -59,7 +60,7 @@ public class Positive {
     @Test
 
     public void FilterByBrendNyx() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();
@@ -77,7 +78,7 @@ public class Positive {
     @Test
 
     public void DateOfBirth() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();

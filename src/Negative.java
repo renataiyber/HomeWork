@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
  * Created by Rena on 28.07.2016.
  */
 public class Negative {
+    String driver_path="./lib/chromedriver.exe";
 
     @Test
 
     public void WrongPass() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path);
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();
@@ -26,7 +27,7 @@ public class Negative {
     @Test
 
     public void WrongLogIn() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rena\\IdeaProjects\\test1\\lib\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", driver_path );
         WebDriver driver = new ChromeDriver();
         driver.get("http://makeup.com.ua/");
         driver.findElement(By.xpath("//header/div/div/div[3]/div")).click();
