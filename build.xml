@@ -67,6 +67,7 @@
 
         <!-- Runs the file and generates Reportng report for TestNG-->
 
+
 <taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="classpath" />
 
 <target name="testng-execution" depends="compile">
@@ -75,12 +76,11 @@
 
 <testng outputdir="${testng-report-dir}" classpathref="classpath" useDefaultListeners="true">
 
-    <xmlfileset dir="${basedir}" includes="testMakeUp" />
+    <xmlfileset dir="${basedir}" includes="testMakeUp.xml" />
 
 </testng>
 
 
 </target>
-
 
         </project>
